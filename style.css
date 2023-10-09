@@ -1,0 +1,94 @@
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.chat-container h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    padding: 9px;
+    color: #fff;
+    background: #03e9f4;
+    font-style: oblique;
+    font-stretch: expanded;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+    animation: color-chng 5s infinite;
+}
+@keyframes color-chng{
+    0% {color: #ccc;}
+    50% {color:rgb(3, 21, 35)c;}
+    100% {color: #1d5994;}
+}
+.chat-output {
+    height: 550px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #fdf8f8f7;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    /*background: repeating-linear-gradient( 90deg, transparent, #030f5c60);
+    animation:btn-an1 5s ease-in-out infinite;*/
+}
+
+.chat-input input {
+    width: calc(100% - 60px);
+    padding: 5px;
+    margin: 0;
+    font-family:sans-serif;
+    color: #0ec0c07e;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    animation:btn-an1 15s ease-in-out infinite;
+}
+
+.chat-input button {
+    width: 90px;
+    padding: 9px;
+    font-family:'Times New Roman', Times, serif;
+    background: #03e9f4;
+  color:#fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+@keyframes btn-an1{
+    0% {
+        left: -100%;
+      }
+      50%,100% {
+        left: 100%;
+      }
+}
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(#141e30,#2271cc90,#59a3f7ca, #243b55,#294c73,#062e5c,#051325,rgba(0,0,0,.6),#070d33);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    
+  }
+
+
+
+
